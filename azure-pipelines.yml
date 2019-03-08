@@ -2,7 +2,6 @@
 # Build and test ASP.NET projects.
 # Add steps that publish symbols, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4123
-# aksriv
 
 variables:
   solution: '**/*.sln'
@@ -19,7 +18,7 @@ steps:
 - task: AzureResourceGroupDeployment@2
   displayName: 'Azure Deployment:Start action on ankhokha-update'
   inputs:
-    azureSubscription: 'ARM-aksriv2'
+    azureSubscription: 'ARM-aksriv'
     action: Start
     resourceGroupName: 'ankhokha-update'
 
